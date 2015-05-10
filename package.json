@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "tape": "~2.4.2",
-    "adaro": "https://github.com/AleCaste/adaro/tarball/v2.x",
+    "adaro": "https://github.com/AleCaste/adaro/tarball/v0.1.x",
     "dustjs-linkedin": "~2.6.2",
     "dustjs-helpers": "~1.6.3",
     "istanbul": "~0.2.4",
@@ -30,8 +30,7 @@
     "freshy": "0.0.2"
   },
   "peerDependencies": {
-    "dustjs-linkedin": "~2.6.2",
-    "adaro": "https://github.com/AleCaste/adaro/tarball/v2.x"
+    "dustjs-linkedin": "~2.6.2"
   },
   "scripts": {
     "test": "tape test/*.js && npm run lint",
