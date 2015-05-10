@@ -29,10 +29,6 @@
     "mockery": "~1.4.0",
     "freshy": "0.0.2"
   },
-  "peerDependencies": {
-    "dustjs-linkedin": "~2.6.2",
-    "adaro": "git://github.com/AleCaste/adaro.git#v0.1.x"
-  },
   "scripts": {
     "test": "tape test/*.js && npm run lint",
     "cover": "istanbul cover tape -- test/*.js",
