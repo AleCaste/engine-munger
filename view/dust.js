@@ -41,6 +41,10 @@ exports.create = function (config) {
         locals = context.get('context');
         locality = util.localityFromLocals(locals);
         props = res.resolve(name, locality).file || i18n.contentPath;
+          if (props==null || props==i18n.contentPath) {
+            locality = locality ? util.parseLangTag(locality) : res._fallback;
+            props = path.join(i18n.contentPath,locality.country,locality.language);
+          }
 
         options = {
             src: path.join(config.views, name + '.dust'),
